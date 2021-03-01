@@ -125,3 +125,31 @@ int main(){
 	cout<< fmax(3,50)<<endl;	//Returns the largets of two numbers
 	cout<< fmin(3,50)<<endl;	//Returns the smalllest of two numbers
 	
+	
+		
+	// GETTING USER'S INPUT FROM KEYBOARD;
+	// Get the information and store it in a computer's memory space
+	
+	int score;		//step one, declare a variable that will be used to store your data
+	cout<<"Enter score: ";	//ask theh user for data by writing to the screen what he/she should enter
+	cin>> score;			//take the user input and store it in the declared variable
+	cout<<"The final score is "<<score<< " Goals"<<endl; // concatenate the string with the variable for better output
+	
+	
+	double ratio;
+	cout<<"Enter the ration: "<<endl;
+	cin>> ratio;
+	cout<<"The final ratio is "<<ratio;
+
+	char initial;
+	cout<<"Enter your initial here:"<<endl;
+	cin>>initial;
+	cout<<"Your name initial character is: "<<initial;
+
+	//get user input in log strings
+	string name;
+	cout<<"Enter your name :"<<endl;
+	getline(cin, name);
+	cout<<"Hello Engineer: "  <<name;
+
+
