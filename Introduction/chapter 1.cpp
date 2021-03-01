@@ -151,5 +151,22 @@ int main(){
 	cout<<"Enter your name :"<<endl;
 	getline(cin, name);
 	cout<<"Hello Engineer: "  <<name;
+	
+	
+	
+
+	// The MAD LIBS GAME
+	// The game is just answer from user input and forms a story like page from filling in the blank spaces
+	string flowerName, flowerColor, country; 
+	cout<<"Enter your favourite flower: ";
+	getline(cin,flowerName);
+	cout<<"Enter color of your favourite flower: ";
+	getline(cin,flowerColor);
+	cout<<"which country will you want it from?  ";
+	getline(cin,country);
+	
+	cout<<flowerName <<"are colorful"<<endl;
+	cout<<"The color is always "<<flowerColor<<endl;
+	cout<<"Its imported from "<<country <<" oversees"<<endl;
 
 
