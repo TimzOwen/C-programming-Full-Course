@@ -169,4 +169,18 @@ int main(){
 	cout<<"The color is always "<<flowerColor<<endl;
 	cout<<"Its imported from "<<country <<" oversees"<<endl;
 
+	 
+    // ARRAYS 
+	// Arrays are created using the [] and passing in elements {} , can also be accessed with indexing.
+	
+	int scores[] = {2, 3, 4, 5, 6, 7, 8, 9, 10}; // creating and initializing arrays
+	cout<<scores[0]<<endl;		// accessing an element with indexing.
+	scores[0] = 20;			// --> 2 // modifying elements in an array;
+	cout<<scores[0]<<endl;	// -->20
+	
+	// fixed arrays 
+	int topScores[10];		//specify the number of elements as 10;
+	topScores[0] = 10; 		// assigning values into an array
+	topScores[1] = 20;
+	cout<<topScores[1]<<endl;  	//--->20
 
