@@ -99,5 +99,29 @@ int main(){
 	
 
 
-    // NUMBERS IN C PROGRAMMING 
+    	// NUMBERS IN C PROGRAMMING 
+	//printing numbers to the screen
+	cout<<50<<endl;
+	cout<<-50<<endl;
+	cout<<-60.6083503508<<endl;
+	
+	//math operations
+	cout<<5+5<<endl;	//addition
+	cout<<5*5<<endl;	//multiplication
+	cout<<5-5<<endl;	//subtraction
+	cout<<5/5<<endl;	//Division
+	cout<<5%2<<endl;	//Modulous --->returns the remainder after divion
+	
+	// order of operation---->BODMAS, (this gives priority to the order of execution);
+	cout<<5+2*5<<endl;	     //15
+	cout<<(5+2)*5<<endl;	//35
+	
+	// inbuilt maths methods. First import the cmath from top
+	cout<< sqrt(49)<<endl;	//calculates the square root of a number
+	cout<< pow(2,2)<<endl;	// gets the power of a number, takes in 2 parameters
+	cout<< round(4.5)<<endl;	// Rounds off a number 
+	cout<< floor(3.9)<<endl;	// rounds down to the pointed integer
+	cout<< ceil(3.2)<<endl;		//Rounds up whichever the case
+	cout<< fmax(3,50)<<endl;	//Returns the largets of two numbers
+	cout<< fmin(3,50)<<endl;	//Returns the smalllest of two numbers
 	
