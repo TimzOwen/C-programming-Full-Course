@@ -109,4 +109,39 @@
     }
     cout<<"Winning Score is: "<<winningScore;
 
+   
+    // Task:
+    // Use combination of comparison operators and nested if else statement to creat a calculator
+    // in which a user enters both numbers and operation to be performed.
+
+    int num1, num2;
+    char ops;
+    double results;
+    
+    cout<<"Enter num1 "<<endl;
+    cin>>num1;
+    cout<<"Enter desired operator: "<<endl;
+    cin>> ops;
+    cout<<"Enter num2 "<<endl;
+    cin>>num2;
+
+    if (ops == ' / '){
+        results = num1/num2;
+    }else if(ops == '*')
+    {
+        results = num1 * num2;
+    }
+    else if (ops == '+'){
+        results = num1 + num2;
+    }
+    else if (ops == '-')
+    {
+        results = num1-num2;
+    }
+    else {
+        cout<<" Wrong input: choose....\n + ---> Addition \n - ---> Subtraction \n * ---> Multiplication \n / ---> Division"
+    }
+    cout<<" The result for "<<num1<<" "<<ops<<" "<<num2<< " is: "<<results;
+
+
 
