@@ -275,6 +275,21 @@
 	else{
 		cout<<"You won !!!";
 	}
+
+
+        // FOR LOOPS:
+    
+    // This helps us keep track of the number of times a value or condition has neen iterated through
+    // architecture:
+
+    for(Condition){
+        // Execute this statements as long as the condition is met
+    }
+
+    for (dataType variable = value; variable<=condition; variable ++/increament ){
+        // Keep executing the code
+        Code goes here;
+    }	
 	
 	
 
