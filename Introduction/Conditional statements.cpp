@@ -196,6 +196,51 @@
 			cout<<dayOfTheWeek;
 	}
 	
+	
+    // While loops;
+
+
+	// --> Allows us to loop execute a code/ perform something , while that condition is true;
+    // WHILE LOOPS:----> First check the condition then execute the code
+	// architecture:
+	
+	Set a condition = value;
+	while(the set Condition == value){
+		// Keep executing/ Looping through this code:
+		//only exit this loop if the set condition is nologer met
+	}
+
+
+    // be careful of infinite loops----> takes up loats of memory space of a computer;
+    int number = 0;
+	while (number<=5){
+		cout<<"Current score is: "<<number<<endl;
+		number = number + 1;
+	}
+
+
+    // DO WHILE LOOPS:
+    // do smething first then check condition:
+    //architecture:
+    declare condition = value;
+	do{
+		// execute the code---> whether or not the condition has been met
+		// you code goes here
+	}	
+	while(Condition to be check now);
+
+
+    // example:
+    int currentNumber = 10;
+	do{
+		cout<<"The current number is: "<<currentNumber<<endl;
+		currentNumber ++;
+	}
+	while(currentNumber<=5);
+	
+	return 0;	
+
+	
 
 
 
