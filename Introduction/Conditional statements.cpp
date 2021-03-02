@@ -240,6 +240,44 @@
 	
 	return 0;	
 
+    
+    //  THE GUESS GAME:
+    // THE GUESS GAME:
+	int secretNum = 5;
+	int userNumber;
+	
+	while(userNumber != secretNum ){
+		cout<<"Guess the number:..."<<endl;
+		cin>>userNumber;
+	}
+	cout<<"You won !!";
+
+
+    // task, reassign code to have--> maxGuess number and print lose if out of maxGuess
+    int guessNum = 10;
+    int userGuess;
+    int maxGuess = 4;
+    int numAttempts = 0;
+    bool outOfAttempts = false;
+    
+    while(userGuess != guessNum && !outOfAttempts){
+        if (numAttempts<maxGuess){
+            cout<<"Enter guess: "<<endl;
+            cin>>userGuess;
+            numAttempts ++;
+        }else{
+            outOfAttempts = true;
+        }  
+    }
+    if(outOfAttempts){
+    	cout<<"You lost ";
+	}
+	else{
+		cout<<"You won !!!";
+	}
+	
+	
+
 	
 
 
