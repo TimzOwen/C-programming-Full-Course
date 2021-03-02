@@ -143,5 +143,59 @@
     }
     cout<<" The result for "<<num1<<" "<<ops<<" "<<num2<< " is: "<<results;
 
+    // SWITCH STATEMENTS:
+	// used for checking one value againest another value. Allows you to exit out of loop is a condition is met.
+	// architecture:---> switch, case and default;
+	
+	switch(Condition here to check){
+		case condition:
+			// here goes the code to be executed:
+			break;  // gets out of the loop.
+		case condition 2:
+			// code to be executed goes here.
+			break;
+		default:
+			// this gets executed if none of the case conditions are met;
+	}
+
+
+    // Example 1:
+    string dayOfTheWeek;
+	int dayNumber = 2;
+	switch(dayNumber){
+		case 1:
+			dayOfTheWeek = "Sunday";
+			cout<<dayOfTheWeek;
+			break;
+		case 2:
+			dayOfTheWeek = "Tuesday";
+			cout<<dayOfTheWeek;
+			break;
+		case 3:
+			dayOfTheWeek = "Wednesday";
+			cout<<dayOfTheWeek;
+			break;
+		case 4:
+			dayOfTheWeek = "Thursday";
+			cout<<dayOfTheWeek;
+			break;
+		case 5:
+			dayOfTheWeek = "Friday";
+			cout<<dayOfTheWeek;
+			break;
+		case 6:
+			dayOfTheWeek = "Sartuday";
+			cout<<dayOfTheWeek;
+			break;
+		case 7:
+			dayOfTheWeek = "Monday";
+			cout<<dayOfTheWeek;
+			break;
+		default:
+			dayOfTheWeek = "Invalid day, try again";
+			cout<<dayOfTheWeek;
+	}
+	
+
 
 
