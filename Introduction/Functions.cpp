@@ -159,3 +159,48 @@
     }
 
 
+     // USE FUNCTION TO GET DAY'S OF THE WEEK IN SWITCH CASE:
+
+
+    string getDay(int dayNumber){
+	
+	string dayOfTheWeek;
+	switch(dayNumber){
+		case 1:
+			dayOfTheWeek = "Sunday";
+			break;
+		case 2:
+			dayOfTheWeek = "Tuesday";
+			break;
+		case 3:
+			dayOfTheWeek = "Wednesday";
+			break;
+		case 4:
+			dayOfTheWeek = "Thursday";
+			break;
+		case 5:
+			dayOfTheWeek = "Friday";
+			break;
+		case 6:
+			dayOfTheWeek = "Sartuday";
+			break;
+		case 7:
+			dayOfTheWeek = "Monday";
+			break;
+		default:
+			dayOfTheWeek = "Invalid day, try again";
+	return dayOfTheWeek;
+	}
+	
+    }
+
+    int main(){	
+
+
+        cout<<"Today is: "<<getDay(5);
+
+        
+            
+    }
+	
+
