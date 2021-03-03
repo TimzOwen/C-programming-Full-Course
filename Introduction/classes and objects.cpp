@@ -334,4 +334,48 @@
         return 0;
     }
 
+   
+    // function/method/attribute overide:
+    class Driver{
+	public:
+		void driveCars(){
+			cout<<"I can drive all motor cars"<<endl;
+		}
+		void driverTrain(){
+			cout<<" I drive trains "<<endl;
+		}
+        // let's overide this function with the pilot class
+		void driverLorry(){
+			cout<<"I driver big tracks "<<endl;
+            }
+    };
+    class Pilot : public Driver{
+        // you can add other attributes and Functionalities here:
+        public:
+            void flyPlanes(){
+                cout<<"I can also fly Boing 787 planes across the world"<<endl;
+            }
+            void driverLorry(){
+			    cout<<"Only fly planes alone !!!!"<<endl;
+            }
+    };
+
+    int main(){
+        
+        Pilot pilot;
+        pilot.driverLorry();
+        
+        Driver driver;
+        driver.driverLorry();        
+
+        return 0;
+    }
+
+
+
+// END OF COURSE
+// KEEP LEARNING AND RESOURCES
+// More content coming 
+// Subscribe on youtube at :  Code With Timz Owen
+
 
