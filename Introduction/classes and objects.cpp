@@ -150,3 +150,99 @@
         
         return 0;
     }
+
+    
+    // Multiple contructors:   
+    class Book{
+        public:
+            string title;
+            string publisher;
+            int price;
+            
+            // default constructor
+            Book(){
+                title = "Empty ";
+                publisher = "None !! ";
+                price = 0;
+            }
+            Book(string aTitle, string aPublisher, int aPrice){
+                title = aTitle;
+                publisher = aPublisher;
+                price = aPrice;
+            }
+    };
+
+    int main(){
+        
+        Book newBook("The Monk master","Dandapani",5000);
+        cout<<newBook.title<<endl;
+        // print from default contructor;
+        Book bookEmpty;
+        cout<<bookEmpty.title;
+
+        return 0;
+    }    
+
+    // Task: create a class of Factory, have a default/empty and one that describes numEmployees, CEO and mainProduct is what;
+    
+    class Factory{
+        public:
+            string CEO;
+            string products;
+            int numOfEmployees;
+
+            Factory(){
+                CEO = " Lead";
+                products = "Goods";
+                numOfEmployees = 1;
+            }
+            Factory(string mCEO, string mProducts, int mNumOfEmployees){
+                CEO = mCEO;
+                products = mProducts;
+                numOfEmployees = mNumOfEmployees;
+            }
+    };
+    int main(){
+
+        Factory teaFactory("Rowlins Sang", "Kericho Tea",400);
+        cout<<teaFactory.CEO<<endl;
+
+        Factory cementFactory;
+        cout<<cementFactory.products;
+
+        return 0;
+    }
+
+    // Grading GPA Task:
+    class GradingSystem{
+	public:
+		string studentName;
+		string school;
+		double gpa;
+		
+		GradingSystem(string aName, string aSchool, double aGpa){
+			studentName = aName;
+			school = aSchool;
+			gpa = aGpa;
+		}
+		// create a function to check for course Retake before graduation
+		bool retakeCourse(){
+			if(gpa>3){
+				return true;	// returned 1;
+			}
+			return false;	// returned 0;
+            }
+    };
+
+    int main(){
+        
+        GradingSystem student1("Owen","Engineering",4);
+        cout<<student1.retakeCourse()<<endl; 	// 1--> True    0---> False
+        
+        GradingSystem student2("Timz ", "Nursing",2);
+        cout<<student2.retakeCourse(); // False---->0
+
+        return 0;
+    }
+
+
