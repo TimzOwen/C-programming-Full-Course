@@ -6,6 +6,20 @@ using namespace std;
 
 // programming--> giving your computer a set of instructions to execute;
 
+
+
+    // COMMENTS IN C++:
+    // They never get executed;--> useful for describing what a function/code does
+    // you can comment out some code to check if the code at that point is the problem if you dont delete
+
+    // Uses forward slash "//" --- does not get 
+    
+    /*This is a multi-line
+    way of commenting things
+    N/B:---> CHECK THE TASK ON CALCULATOR AND USE MULTILINE COMMENTS and update the github one.
+    */
+
+
 //This is the main function that gets called before any code gets executed
 int main(){
     // print Hello world of programming;
