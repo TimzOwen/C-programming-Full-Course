@@ -245,4 +245,93 @@
         return 0;
     }
 
+   
+    // UPNEXT
+    // C++ Getters and Setter;
+    // Helps you control and implement how you are goig to assign and get values from a class
+    class Games{
+	private:
+		string ref;
+	public:
+		string game;
+		int score;
+		
+		Games(string aGame, string aRef, int aScore){
+			game = aGame;
+			chooseRef(aRef);
+			score = aScore;
+		}
+		void chooseRef(string aRef){
+			if(aRef == "Owen" || aRef == "Timz" || aRef == "You" || aRef == "Mwangi"){
+				ref = aRef;
+			}
+			else{
+				ref = "Lead Ref: James";
+			}
+		}
+		// create a getter method to fetch the private Ref declare on top as its only accessible to this class if no getter found.
+		string chooseRef(){
+			return ref;
+            }
+    }; 
+
+    int main(){
+        
+        Games football("Champions League","owino",3);
+        cout<<football.chooseRef();     // returns default if not entered from the choice:
+
+        return 0;
+    }
+
+
+    // INHERITANCE IN C++ PROGRAMMING & CLASSES:
+    // superclass--> Main class
+    // subclass----> one inheriting from Main class
+    // This defining a class and creating other class which will inherit attributs and Functionalities of main class
+
+    // Architeture:
+    class Driver{
+        // code here
+    }
+    class pilot : public Driver{
+        // code here
+        // Functionatilites of Driver extended to class Pilot
+    }
+    int main(){
+        // call the classes and print out to screen
+    }
+
+
+    //EXAMPLE 1:
+    class Driver{
+	public:
+		void driveCars(){
+			cout<<"I can drive all motor cars"<<endl;
+		}
+		void driverTrain(){
+			cout<<" I drive trains "<<endl;
+		}
+		void driverLorry(){
+			cout<<"I driver big tracks "<<endl;
+            }
+    };
+    class Pilot : public Driver{
+        // you can add other attributes and Functionalities here:
+        public:
+            void flyPlanes(){
+                cout<<"I can also fly Boing 787 planes across the world"<<endl;
+            }
+    };
+
+    int main(){
+        
+        Pilot pilot;
+        pilot.driveCars();
+        
+        pilot.flyPlanes();
+        
+
+        return 0;
+    }
+
 
