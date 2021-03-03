@@ -290,6 +290,48 @@
         // Keep executing the code
         Code goes here;
     }	
+
+   
+    // example 1;
+    // printing element inside a for loop
+	for(int i = 0; i<=5;i++){
+		cout<<"Looping at number: "<<i<<endl;
+	}
+
+    // iterating throug elements of an array;
+    int numbers[] = {2,4,6,8,10};
+	for (int i = 0; i<=numbers[i]; i++){
+	    cout<<numbers[i]<<endl;
+	}
+
+    // Task: Use for loop
+	// Calculate the power of a number from a base number.
+	int baseNum = 2;
+	int powerNum = 3;
+	int result = 1;	// setting it to start from a positive number	
+	for(int i =0; i<powerNum; i++ ){
+		result = result * baseNum;
+	}	
+	cout<<"The power of 2 is: "<<result;
+
+
+
+    // Nested For loops:
+    // for loop inside another for loop
+    // iteterate through for loop
+
+    int coordinates[3][3] = {
+                    {2,4,6,},
+                    {1,3,5},
+                    {10,20,30}
+                            };
+    for (int i = 0; i<3;i++){  // iterates through the rows
+        for int(j=0;j<3;j++){   // iterates through the columns
+            cout<<coordinates[i][j]; // print out the value in a set order
+        }
+        cout<<endl; // prints out in new lines.
+    }
+
 	
 	
 
