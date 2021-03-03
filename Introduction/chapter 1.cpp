@@ -184,3 +184,22 @@ int main(){
 	topScores[1] = 20;
 	cout<<topScores[1]<<endl;  	//--->20
 
+	// 2-D Arrays
+    // Array inside another array 
+
+    // Archotecture
+    arrays numbers[rows-size-Number][columns-Total-elements] = 
+                                                                Parent Array--{
+                                                                    {child}, 
+                                                                    {child},
+                                                                    {child}
+                                                                Parent array---}
+	
+    int coordinates[3][3] = {
+                            {2,4,6,},
+                            {1,3,5},
+                            {10,20,30}
+                            };
+    
+    // to access elements, use to [][] for row and column indexies. 
+    cout<<coordinates[0][0] // print 2 ---> First row, first element
